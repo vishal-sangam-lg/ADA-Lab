@@ -17,14 +17,12 @@ int main()
             g[j][i]=a;
         }
     }
-    int src;
-    cout<<"Enter the source vertex\n";
-    cin>>src;
+    
     int dist[n];
     for(int i=0; i<n; i++){
-        dist[i]=g[src][i];
+        dist[i]=g[0][i];
     }
-    dist[src]=0;
+    dist[0]=0;
     bool mset[n]={false};
     int u=-1,res=0;
     for(int cnt=0; cnt<n; cnt++){
