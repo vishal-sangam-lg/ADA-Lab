@@ -12,7 +12,7 @@ int knapsack(int wt[], int val[], int C, int n)
             {
                 dp[i][j]=0;
             }
-            else if(wt[i-1]>C)
+            else if(wt[i-1]>j)
             {
                 dp[i][j]=dp[i-1][j];
             }
@@ -33,6 +33,23 @@ int knapsack(int wt[], int val[], int C, int n)
         cout<<endl;
     }
 
+    //elements selected
+    cout<<"The elements selected are: ";
+    int j=C;
+    for(int i=n; i>=1; i--)
+    {
+        if(dp[i-1][j]==dp[i][j])
+            {
+                i--;
+            }
+            else
+            {
+                cout<<i<<" ";
+                j=j-wt[i];
+            }
+    }
+    cout<<endl;
+
     return dp[n][C];
 }
 
@@ -50,6 +67,6 @@ int main()
     cout<<"Enter the capacity\n";
     cin>>C;
     int res = knapsack(wt, val, C, n);
-    cout<<"The max profit is:\n"<<res;
+    cout<<"The max profit is:\n"<<res<<endl;
     return 0;
 }
