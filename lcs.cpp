@@ -36,7 +36,8 @@ int lcs( string s1, string s2, int m, int n)
     
     //******* to find lcs string *******
     
-    /*int index = dp[m][n];
+    /*
+    int index = dp[m][n];
     char lcs[index + 1];
     lcs[index] = '\0'; 
     int i=m,j=n;
@@ -57,7 +58,8 @@ int lcs( string s1, string s2, int m, int n)
         j--;
     }
       
-      cout<<"\nThe selected elements are: "<<lcs; */
+      cout<<"\nThe selected elements are: "<<lcs; 
+      */
       
     return dp[m][n];
 }
