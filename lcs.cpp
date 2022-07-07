@@ -24,15 +24,14 @@ int lcs( string s1, string s2, int m, int n)
 
     //  cout<<"The longest common subsequence is of length: "<<dp[m][n]<<endl;
 
-    for(int i=0; i<m; i++)
+    for(int i=0; i<=m; i++)
     {
-        for(int j=0; j<n; j++)
+        for(int j=0; j<=n; j++)
         {
             cout<<dp[i][j]<<" ";
         }
         cout<<endl;
     }
-    cout<<dp[m][n];
     
     //******* to find lcs string *******
     
