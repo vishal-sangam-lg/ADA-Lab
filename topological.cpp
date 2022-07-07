@@ -6,13 +6,7 @@ int main(){
     cin>>n>>e;
     int g[n][n];
     cout<<"Enter the edges\n";
-    for(int i=0; i<n; i++)
-    {
-        for(int j=0; j<n; j++)
-        {
-            g[i][j]=0;
-        }
-    }
+    fill(g[0], g[0]+n*n, 0);
     for(int i=0; i<e; i++)
     {
         int a, b;

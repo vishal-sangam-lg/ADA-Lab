@@ -55,7 +55,7 @@ bool solve()
                 if(board[i][j]==true)
                 cout<<"Q ";
                 else 
-                cout<<"X ";
+                cout<<"x ";
             }
             cout<<endl;
         }
@@ -65,14 +65,6 @@ bool solve()
 
 int main()
 {
-    // for(int i=0; i<n; i++)
-    // {
-    //     for(int j=0; j<n; j++)
-    //     {
-    //         cout<<board[i][j]<<" ";
-    //     }
-    //     cout<<endl;
-    // }
     cout<<endl;
     solve();
     return 0;

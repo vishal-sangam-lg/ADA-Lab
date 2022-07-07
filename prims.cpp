@@ -26,7 +26,7 @@ int main()
     bool mset[n]={false};
     int u=-1,res=0;
     for(int cnt=0; cnt<n; cnt++){
-        for (int i = 0; i < n; i++)
+        for (int i = 0; i < n-1; i++)
         {
             if(!mset[i] && (u=-1 || dist[i]<dist[u])){
                 u=i;
