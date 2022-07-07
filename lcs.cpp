@@ -33,6 +33,32 @@ int lcs( string s1, string s2, int m, int n)
         cout<<endl;
     }
     cout<<dp[m][n];
+    
+    //******* to find lcs string *******
+    
+    /*int index = dp[m][n];
+    char lcs[index + 1];
+    lcs[index] = '\0'; 
+    int i=m,j=n;
+    while( i>0 && j>0)
+    {
+        if(s1[i-1]==s2[j-1])
+        {
+            lcs[index - 1]=s1[i - 1];  
+            i--;
+            j--;
+            index--;
+        }
+        else if(dp[i-1][j]>=dp[i][j-1])
+        {
+            i--;
+        }
+        else 
+        j--;
+    }
+      
+      cout<<"\nThe selected elements are: "<<lcs; */
+      
     return dp[m][n];
 }
 int main(){
